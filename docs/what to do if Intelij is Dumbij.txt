@@ -1,0 +1,2 @@
+remove .idea after closing the ide
+open intelij

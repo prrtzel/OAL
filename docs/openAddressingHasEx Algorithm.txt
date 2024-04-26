@@ -1,0 +1,64 @@
+table is an array of strings
+must be prime: size of table = determine from loadfactor
+
+numOfItems, count all items in file for size of string
+
+use abs(Word.hashCode()) % prime tableSize to place elements
+
+watch for negative quadratic probe result
+
+
+b = n / l
+calculate table size based on load factor and number of elements
+then, tableSize = findNextPrime(tableSize)
+the to find the hashcode, hashcode % tableSize
+
+find hashcode, insert, if insertion is collision, use probe to relocate
+
+linear probe method
+quadratic probe method
+
+use 70% to 100% at 1% increments
+
+
+
+
+
+
+
+
+
+
+get array of strings
+
+for all load factors:
+	tableSize = size / loadFactor
+	tableSize = findNextPrime(tableSize)
+	hashCode = abs(Word.hashCode()) % tableSize
+	insert using linear probe on one array
+	insert using quadratic probe on the other array
+	record results
+
+
+
+Methods:
+
+getTableSize()
+
+linearInsert()
+
+quadraticInsert()
+
+in quadratic insert,
+if the value is too large modulus it by
+the table size, b
+if the value is negative, take the absolute value and modulus it
+
+
+
+
+
+
+
+
+
