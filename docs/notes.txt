@@ -1,0 +1,4 @@
+java program crashes in quadratic probe in iteration 3
+
+infinite loop happens as quadratic probe is looking at the same
+hash codes
