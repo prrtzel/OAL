@@ -32,7 +32,8 @@ public class Driver {
             tableSize = findNextPrime(tableSize);
 
             String[] hashTable = new String[tableSize];
-            OAL oal = new OAL(hashTable);
+            OAL oalLinear = new OAL(hashTable);
+            OAL oalQuadratic = new OAL(hashTable);
 
             for (int i = 0; i < numOfItems; i++) {
                 //determine hashcode
@@ -40,10 +41,10 @@ public class Driver {
                 hashCode = Math.abs(hashCode % tableSize);
 
                 //Linear insert
-                oal.linearInsert(hashCode, dictionary[i]);
+                oalLinear.linearInsert(hashCode, dictionary[i]);
 
                 //Quadratic insert
-                oal.quadraticInsert(hashCode, dictionary[i]);
+                oalQuadratic.quadraticInsert(hashCode, dictionary[i]);
             }
         }
 
