@@ -14,6 +14,11 @@ public class OAL {
         hashTable[hashCode] = str;
     }
     public void quadraticInsert(int hashCode, String str) {
-
+        int value = 1;
+        while (hashTable[hashCode] != null) {
+            hashCode = hashCode + (value * value);
+            value++;
+        }
+        hashTable[hashCode] = str;
     }
 }
