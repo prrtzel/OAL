@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab718654-7725-49bc-8967-c9f913f52165" name="Changes" comment="quadratic probe done">
-      <change afterPath="$PROJECT_DIR$/docs/notes.txt" afterDir="false" />
+    <list default="true" id="ab718654-7725-49bc-8967-c9f913f52165" name="Changes" comment="quadratic probe infinitely loops and fixed linear probe">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OAL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1714146203866</updated>
       <workItem from="1714146205729" duration="2161000" />
-      <workItem from="1714164381984" duration="3028000" />
+      <workItem from="1714164381984" duration="5202000" />
+      <workItem from="1714175810916" duration="1349000" />
     </task>
     <task id="LOCAL-00001" summary="driver done">
       <option name="closed" value="true" />
@@ -90,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714148363495</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="quadratic probe infinitely loops and fixed linear probe">
+      <option name="closed" value="true" />
+      <created>1714167626956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714167626956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +110,17 @@
     <MESSAGE value="driver done" />
     <MESSAGE value="linear probe done" />
     <MESSAGE value="quadratic probe done" />
-    <option name="LAST_COMMIT_MESSAGE" value="quadratic probe done" />
+    <MESSAGE value="quadratic probe infinitely loops and fixed linear probe" />
+    <option name="LAST_COMMIT_MESSAGE" value="quadratic probe infinitely loops and fixed linear probe" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

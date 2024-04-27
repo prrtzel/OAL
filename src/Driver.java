@@ -28,11 +28,15 @@ public class Driver {
         int hashCode = 0;
         int totalCollisions = 0;
         int itemsWOCollisions = 0;
+        double load = 0;
 
-        for (int load = 70; load <= 100; load++) {
-            System.out.println("Load: " + load);
+        for (int j = 70; j <= 100; j++) {
+            System.out.println("Load: " + j);
+            //convert load factor to percentage
+            load = (double) j / 100;
+
             //find table size
-            tableSize = numOfItems % load;
+            tableSize = (int) Math.ceil(numOfItems / (load));
             tableSize = nextPrime(tableSize);
 
             String[] hashTable = new String[tableSize];
@@ -44,11 +48,12 @@ public class Driver {
                 hashCode = dictionary[i].hashCode();
                 hashCode = Math.abs(hashCode) % tableSize;
 
+                //probes: comment out one for it to work
                 //Linear insert
                 oalLinear.linearInsert(hashCode, dictionary[i]);
 
                 //Quadratic insert
-                oalQuadratic.quadraticInsert(hashCode, dictionary[i]);
+                //oalQuadratic.quadraticInsert(hashCode, dictionary[i]);
             }
 
             itemsWOCollisions = oalLinear.numOfItemsWOCollisions + oalQuadratic.numOfItemsWOCollisions;

@@ -17,8 +17,11 @@ public class OAL {
         while (hashTable[hashCode] != null) {
             noCollisions = false;
             numOfCollisions++;
-
             hashCode++;
+
+            if (hashCode >= hashTable.length) {
+                hashCode = hashCode % hashTable.length;
+            }
         }
 
         hashTable[hashCode] = str;
@@ -41,7 +44,6 @@ public class OAL {
             if (hashCode >= hashTable.length ||
                 hashCode < 0) {
                 hashCode = Math.abs(hashCode % hashTable.length);
-                System.out.println(hashCode);
             }
         }
 
